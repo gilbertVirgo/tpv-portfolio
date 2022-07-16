@@ -41,7 +41,7 @@ const Wrapper = styled.ul`
 	position: absolute;
 	left: 15px;
 	top: 115px;
-	z-index: 2;
+	z-index: 150;
 
 	li {
 		margin-bottom: 10px;
