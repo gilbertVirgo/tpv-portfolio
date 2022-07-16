@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 	box-sizing: border-box;
 
 	position: relative;
-	z-index: 2;
+	z-index: 200;
 
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,7 @@ export const Overlay = styled.div`
 	background-color: ${color.light};
 
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	left: 0;
 	top: 0;
 	width: 100%;
