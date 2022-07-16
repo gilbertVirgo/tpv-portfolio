@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 	margin-bottom: 45px;
 	position: relative;
 	perspective: 500px;
+	transform: translateZ(0px);
 `;
 
 export const Image = styled.img`

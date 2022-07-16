@@ -16,6 +16,10 @@ export default ({ documents, isVideo }) => {
 			".slide",
 			{
 				scrollY: {
+					translateZ: [
+						[0, 0],
+						[0, 0],
+					],
 					translateY: [
 						// CSS property
 						["elInY", "elCenterY-150"], // Driver value map
