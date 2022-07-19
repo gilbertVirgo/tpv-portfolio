@@ -6,10 +6,14 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Paintings from "./pages/Paintings";
 import React from "react";
-import { ThemeProvider } from "styled-components";
 import Videos from "./pages/Videos";
+import refreshMasterRef from "./prismic/refreshMasterRef";
 
 function App() {
+	React.useEffect(function () {
+		refreshMasterRef();
+	}, []);
+
 	return (
 		<BrowserRouter>
 			<Nav />

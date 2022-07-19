@@ -1,7 +1,7 @@
 export default async (query) => {
 	console.log(encodeURIComponent(query.toString()));
 
-	const ref = "YshmjxAAACIAhq7u";
+	const ref = localStorage.getItem("prismic-ref");
 
 	const json = (
 		await (
