@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import React from "react";
 import { Title } from "../../components";
 
-const emailAddress = "theovirgo@gmail.com";
+const emailAddress = "theodorevirgo@gmail.com";
 
 export default () => {
 	const handleSubmit = (event) => {
