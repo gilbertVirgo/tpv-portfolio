@@ -14,8 +14,4 @@ const IFrame = styled.iframe.attrs({
 	height: 100%;
 `;
 
-export default ({ url }) => {
-	console.log("dodge", { url });
-
-	return <IFrame src={url} />;
-};
+export default ({ url }) => <IFrame src={url} />;
