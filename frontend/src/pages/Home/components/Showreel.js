@@ -30,7 +30,14 @@ const Video = styled.video`
 
 export default () => (
 	<Wrapper>
-		<Video autoPlay loop muted playsInline>
+		<Video
+			autoPlay
+			loop
+			muted
+			playsInline
+			webkit-playsInline
+			webkit-playsinline
+		>
 			<source
 				src={require("../../../assets/showreel.mp4")}
 				type="video/mp4"
