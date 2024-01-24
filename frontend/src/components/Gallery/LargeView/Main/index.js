@@ -13,7 +13,7 @@ export default ({ document, isVideo }) => {
 	return (
 		<Wrapper>
 			{isVideo ? (
-				<Video url={document.video.url} />
+				<Video {...document} />
 			) : (
 				<Image url={document.image.url} />
 			)}

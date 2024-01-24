@@ -10,7 +10,11 @@ export default ({
 }) => {
 	return (
 		<Wrapper className="slide">
-			{isVideo ? <Video url={video.url} /> : <Image src={image.url} />}
+			{isVideo ? (
+				<Video video={video} image={image} />
+			) : (
+				<Image src={image.url} />
+			)}
 			<Title>{title}</Title>
 			<Paragraph>{description}</Paragraph>
 		</Wrapper>

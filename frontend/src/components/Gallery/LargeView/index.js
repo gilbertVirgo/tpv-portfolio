@@ -22,14 +22,11 @@ export default ({ documents, isVideo }) => {
 	const handleDecrement = () =>
 		setIndex(index - 1 === -1 ? documents.length - 1 : index - 1);
 
-	const url = (d) =>
-		isVideo ? getThumbnailFromYoutubeVideo(d.video.url) : d.image.url;
-
 	return (
 		<Wrapper>
-			<Left url={url(left)} onClick={handleDecrement} />
+			<Left url={left.image.url} onClick={handleDecrement} />
 			<Main isVideo={isVideo} document={main} />
-			<Right url={url(right)} onClick={handleIncrement} />
+			<Right url={right.image.url} onClick={handleIncrement} />
 			<Description>
 				<Heading>{main.title}</Heading>
 				<Paragraph>{main.description}</Paragraph>

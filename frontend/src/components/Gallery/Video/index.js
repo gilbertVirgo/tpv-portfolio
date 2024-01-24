@@ -3,25 +3,23 @@ import { Overlay, PlayButton, Wrapper } from "./styles";
 import Frame from "./Frame";
 import React from "react";
 import getEmbedURLFromYoutubeVideo from "../scripts/getEmbedURLFromYoutubeVideo";
-import { getThumbnailFromYoutubeVideo } from "../scripts/getThumbnailFromYoutubeVideo";
 
-export default ({ url }) => {
+export default ({ video, image }) => {
 	const [showOverlay, setShowOverlay] = React.useState(true);
 
-	console.log({ url });
-
-	React.useEffect(() => setShowOverlay(true), [url]);
+	React.useEffect(() => setShowOverlay(true), [video.url]);
 
 	return (
 		<Wrapper>
-			<Overlay url={getThumbnailFromYoutubeVideo(url)} show={showOverlay}>
+			<Overlay url={image.url} show={showOverlay}>
 				<PlayButton onClick={() => setShowOverlay(false)} />
 			</Overlay>
 
 			{!showOverlay && (
 				<Frame
 					url={
-						getEmbedURLFromYoutubeVideo(url) + "?autoplay=1&mute=1"
+						getEmbedURLFromYoutubeVideo(video.url) +
+						"?autoplay=1&mute=1"
 					}
 				/>
 			)}
