@@ -7,8 +7,8 @@ export default () => {
 		<Outer>
 			<Inner>
 				<InstagramIcon />
-				<Paragraph as="a" href="https://instagram.com/theovirgo_">
-					@theovirgo_
+				<Paragraph as="a" href="https://instagram.com/theovirgo.com_">
+					@theovirgo.com_
 				</Paragraph>
 			</Inner>
 		</Outer>
